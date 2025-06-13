@@ -38,3 +38,64 @@ button {
   transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
   box-shadow: 0 0 10px #00ffcc;
 }
+
+/* Neon glow pulse */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  }
+  50% {
+    box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+  }
+}
+
+.menu-button:hover {
+  animation: neonPulse 1.5s infinite;
+  background-color: #00ffcc;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #00ffcc, 0 0 60px #00ffcc inset;
+}
+
+/* Sliding underline */
+.menu-button::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: #00ffcc;
+  border-radius: 2px;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menu-button:hover::after {
+  width: 70%;
+  left: 15%;
+}
+
+/* Bounce on click */
+.menu-button:active {
+  animation: bounce 0.3s;
+  transform: scale(0.95);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+/* subtle color shift */
+@keyframes colorShift {
+  0%, 100% { color: #00ffcc; }
+  50% { color: #00ddbb; }
+}
+
+.menu-button:hover span {
+  animation: colorShift 2s infinite;
+}
