@@ -17,9 +17,24 @@ html, body {
     height: 100%;
     display: flex;
     justify-content: center;
+}
+#my-buttons {
+    display: flex;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    width: fit-content;
+    margin-right: 30%;
 }
+
+#my-buttons2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: fit-content;
+}
+
 
 button {
       font-family: 'Orbitron', sans-serif;
@@ -37,6 +52,8 @@ button {
   font-family: 'Orbitron', sans-serif;
   transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
   box-shadow: 0 0 10px #00ffcc;
+  height: 8%;
+  width: 100%;
 }
 
 /* Neon glow pulse */
