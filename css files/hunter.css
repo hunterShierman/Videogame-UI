@@ -25,7 +25,6 @@ button {
       font-family: 'Orbitron', sans-serif;
       margin-bottom: 15px;
       margin-left: 20%;
-
 }
 
 .menu-button {
@@ -91,7 +90,7 @@ button {
   }
 }
 
-/* Optional: subtle color shift */
+/* subtle color shift */
 @keyframes colorShift {
   0%, 100% { color: #00ffcc; }
   50% { color: #00ddbb; }
