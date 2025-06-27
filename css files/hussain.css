@@ -28,16 +28,22 @@ button {
 }
 
 .menu-button {
-  padding: 10px 30px;
+  width: 350px;
+  padding: 20px 0;          /* vertical padding only */
+  box-sizing: border-box;
+
+  /* typography + neon style */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 50px;
   background-color: #111;
   color: #00ffcc;
   border: 2px solid #00ffcc;
   border-radius: 22px;
-  font-size: 50px;
-  font-family: 'Orbitron', sans-serif;
-  transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
   box-shadow: 0 0 10px #00ffcc;
+  position: relative;       /* for the ::after underline */
+  transition: all 0.3s ease;
 }
+
 
 /* Neon glow pulse */
 @keyframes neonPulse {
@@ -83,12 +89,13 @@ button {
 
 .left-text {
   position: absolute;
-  top:475px;
-  left: 270px;
-  font-family: 'Audiowide', sans-serif;
-  font-size: 80px;
-  color: #00ffcc;
+  top: 505px;
+  left: 340px;
+  font-family: 'Michroma', sans-serif;
+  font-size: 100px;
+  color: #7c8b88;
   z-index: 10; /* make sure it's above background */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
 
 @keyframes bounce {
