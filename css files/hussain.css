@@ -22,18 +22,18 @@ html, body {
   flex-direction: column;
 }
 button {
-      font-family: 'Orbitron', sans-serif;
-      margin-bottom: 15px;
-      margin-left: 20%;
+      font-family: 'Michroma', sans-serif;
+      margin-bottom: 40px;
+      margin-left: 60%;
 }
 
 .menu-button {
-  padding: 15px 30px;
+  padding: 10px 30px;
   background-color: #111;
   color: #00ffcc;
   border: 2px solid #00ffcc;
-  border-radius: 10px;
-  font-size: 14px;
+  border-radius: 22px;
+  font-size: 50px;
   font-family: 'Orbitron', sans-serif;
   transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
   box-shadow: 0 0 10px #00ffcc;
@@ -66,7 +66,7 @@ button {
   width: 0;
   height: 3px;
   background: #00ffcc;
-  border-radius: 2px;
+  border-radius: 4px;
   transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -79,6 +79,16 @@ button {
 .menu-button:active {
   animation: bounce 0.3s;
   transform: scale(0.95);
+}
+
+.left-text {
+  position: absolute;
+  top:475px;
+  left: 270px;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 80px;
+  color: #00ffcc;
+  z-index: 10; /* make sure it's above background */
 }
 
 @keyframes bounce {
